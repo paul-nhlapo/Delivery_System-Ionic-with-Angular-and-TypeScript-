@@ -37,7 +37,7 @@ Ensure you have **Node.js** and **Ionic CLI** installed. Follow these steps:
     npm install
 3. Start the Ionic development server:
    ionic serve
-/src
+**/src
  ├── /app
  │   ├── /home
  │   ├── /search
@@ -49,7 +49,7 @@ Ensure you have **Node.js** and **Ionic CLI** installed. Follow these steps:
  ├── index.html
  ├── styles.scss
  ├── main.ts
- ├── package.json
+ ├── package.json**
 
 ## Usage Guide
 - **Home Page:** Click on a restaurant to automatically add an order to the cart.
