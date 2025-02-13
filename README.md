@@ -7,8 +7,7 @@
 - [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
 - [Usage Guide](#usage-guide)
-- [Submission Instructions](#submission-instructions)
-- [Video Demonstration](#video-demonstration)
+
 
 ## Project Overview
 This project is a mobile application built using **Ionic with Angular and TypeScript**. The application, **354 Delivery**, is designed for online food delivery, allowing customers to browse restaurants, place orders, and manage their accounts. The application is structured with four main pages:
@@ -38,3 +37,22 @@ Ensure you have **Node.js** and **Ionic CLI** installed. Follow these steps:
     npm install
 3. Start the Ionic development server:
    ionic serve
+/src
+ ├── /app
+ │   ├── /home
+ │   ├── /search
+ │   ├── /cart
+ │   ├── /account
+ │   ├── app.module.ts
+ │   ├── app.component.ts
+ ├── /assets
+ ├── index.html
+ ├── styles.scss
+ ├── main.ts
+ ├── package.json
+
+## Usage Guide
+- **Home Page:** Click on a restaurant to automatically add an order to the cart.
+- **Search Page:** Enter restaurant details in the search bar.
+- **Cart Page:** View items, edit quantity, and complete payment.
+- **Account Page:** Edit user details, reorder past orders, and access the "Get Help" modal.
