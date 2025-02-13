@@ -1,0 +1,35 @@
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>Search</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Search</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <div class="search-container">
+      <ion-searchbar  (ionChange)="searchRestaurants($event)" animated animation="ios"></ion-searchbar>
+  
+      <ion-list class="restaurant-list" [mode]="'ios'">
+        <ion-item *ngFor="let restaurant of filteredRestaurants$ | async" (click)="addToCart(restaurant)">
+          <ion-thumbnail slot="start">
+            <img [src]="restaurant.image">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{ restaurant.name }}</h2>
+            <h3>{{ restaurant.type }}</h3>
+            <p>{{ restaurant.description }}</p>
+            <p class="ratings">{{ restaurant.ratings }} &#9733;</p>
+            <p class="distance">{{ restaurant.distance }}</p>
+            <p class="price">R{{ restaurant.price }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+  
