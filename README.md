@@ -5,7 +5,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Running the Project](#running-the-project)
-- [Project Structure](#project-structure)
 - [Usage Guide](#usage-guide)
 
 
@@ -37,19 +36,6 @@ Ensure you have **Node.js** and **Ionic CLI** installed. Follow these steps:
     npm install
 3. Start the Ionic development server:
    ionic serve
-**/src
- ├── /app
- │   ├── /home
- │   ├── /search
- │   ├── /cart
- │   ├── /account
- │   ├── app.module.ts
- │   ├── app.component.ts
- ├── /assets
- ├── index.html
- ├── styles.scss
- ├── main.ts
- ├── package.json**
 
 ## Usage Guide
 - **Home Page:** Click on a restaurant to automatically add an order to the cart.
